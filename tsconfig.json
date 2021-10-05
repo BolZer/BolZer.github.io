@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "module": "es2020",
+    "target": "ES5",
+    "strictNullChecks": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./web/declarations/images.d.ts"
+    ],
+  }
+}
