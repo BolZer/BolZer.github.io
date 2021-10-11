@@ -7,8 +7,12 @@ const TerserPlugin = require('terser-webpack-plugin');
 require('dotenv').config()
 
 module.exports = {
+    watchOptions: {
+        ignored: /node_modules/,
+        poll: 1000
+    },
     mode: process.env.MODE,
-    entry: './scripts/index.ts',
+    entry: './scripts/index.tsx',
     optimization: {
         minimize: process.env.MODE === "production",
         minimizer: [
@@ -51,6 +55,12 @@ module.exports = {
         ],
     },
     resolve: {
+        alias: {
+            "react": "preact/compat",
+            "react-dom/test-utils": "preact/test-utils",
+            "react-dom": "preact/compat",
+            "react/jsx-runtime": "preact/jsx-runtime"
+        },
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
@@ -59,12 +69,7 @@ module.exports = {
         clean: true,
     },
     devServer: {
-        watchFiles: {
-            paths: ['scripts/**/*', 'assets/**/*'],
-            options: {
-                usePolling: false,
-            },
-        },
+       hot: true,
         static: [
             path.join(__dirname, 'dist'),
         ],
