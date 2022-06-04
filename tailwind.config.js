@@ -21,11 +21,9 @@ module.exports = {
       yellow: colors.amber,
       blue: colors.blue,
       teal: colors.teal,
-    },
-    extend: {
       primary: "#212326",
       secondary: "#36393f"
-    }
+    },
   },
   variants: {
     extend: {},
