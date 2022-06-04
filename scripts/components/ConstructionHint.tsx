@@ -16,23 +16,23 @@ export function ConstructionHint(): JSX.Element {
                     <div className="grid grid-cols-3 gap-4 whitespace-nowrap">
 
                         <a href="https://github.com/BolZer" target={"_blank"} title="Jan Nöhles at Github"
-                           className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-yellow-600 hover:bg-yellow-600 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
+                            className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-yellow-600 hover:bg-yellow-600 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
                             <span className="mx-auto">
-                              <i className="fab fa-github fa-fw"/> Github
+                                <i className="fab fa-github fa-fw"/> Github
                             </span>
                         </a>
 
                         <a href="https://twitter.com/esotericDraugr" target={"_blank"} title="Jan Nöhles at Twitter"
-                           className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-blue-500 hover:bg-blue-500 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
+                            className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-blue-500 hover:bg-blue-500 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
                             <span className="mx-auto">
                                 <i className={"fab fa-twitter fa-fw"}/> Twitter
                             </span>
                         </a>
 
                         <a href="#" target={"_blank"} title="Jan Nöhles at Xing"
-                           className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-red-500 hover:bg-red-500 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
+                            className="md:w-32 tracking-wide font-bold rounded border-2 border-teal-500 hover:text-white hover:border-red-500 hover:bg-red-500 shadow-md py-2 px-6 inline-flex items-center transition duration-500">
                             <span className="mx-auto">
-                              <i className={"fab fa-xing fa-fw"}/> Xing
+                                <i className={"fab fa-xing fa-fw"}/> Xing
                             </span>
                         </a>
 

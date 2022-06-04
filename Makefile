@@ -12,3 +12,6 @@ build:
 
 serve:
 	docker exec -it portfolio_node pnpm run serve
+
+lint:
+	docker exec -it portfolio_node ./node_modules/.bin/eslint --fix ./scripts/
