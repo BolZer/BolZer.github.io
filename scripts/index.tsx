@@ -1,17 +1,15 @@
-import "../assets/tailwind.css"
-import "../assets/style.scss"
+import "../assets/style.css"
 
 import {render} from "preact";
 
 import React from "react";
-import {ConstructionHint} from "./components/ConstructionHint"
 import {SideBar} from "./components/SideBar";
 
 const Portfolio = (): JSX.Element => {
     return (
         <>
             <SideBar/>
-            <ConstructionHint/>
+            <div className={"w-screen h-screen text-center flex justify-center items-center"}>Content</div>
         </>
     )
 }

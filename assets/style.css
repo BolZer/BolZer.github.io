@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #146dfc;
+    --secondary: #3c8dfc;
+    --success: #15b41a;
+    --info: #4223a3;
+    --link: #64bfff;
+    --highlight1: #d6bef9;
+    --background: #212326;
+    --background2: #36393f;
+    --background3: #404349;
+    --background4: #999faa;
+    --blue0: #141922;
+    --blue1: #171a21;
+    --blue2: #1f2635;
+    --blue3: #1b2838;
+    --blue4: #2a475e;
+    --blue5: #377197;
+    --blue6: #309ab5;
+    --red: #ff7363;
+    --red-dark: #9c362d;
+    --yellow: #f3ff7e;
+    --light-green: #68dc7d;
+    --light-green-opacity: rgba(104,220,125,.4);
+    --light-blue: #7cc5dc;
+    --light-blue-opacity: rgba(124,197,220,.4);
+    --light-purple: #987fd7;
+    --dark-purple: #8466bf;
+    --site-width: 1000px;
+}
+
+html {
+    background-color: var(--background);
+    color: #fff;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    @apply fixed top-0 right-0 h-screen w-16 m-0 flex flex-col bg-zinc-800
+    shadow-md justify-between
+}
+
+.sidebar-avatar-container {
+    @apply pt-4 pb-4 text-center bg-zinc-900
+}
+
+.sidebar-avatar-text {
+    @apply mt-4 font-bold text-lg
+}
+
+.sidebar-avatar {
+    @apply relative flex items-center justify-start h-12 w-12
+    mx-auto shadow-lg rounded-3xl transition-all bg-cover bg-center
+}
+
+.sidebar-icon {
+    @apply relative flex items-center justify-center h-12 w-12 mt-3 mb-3
+    mx-auto shadow-lg bg-gray-800 text-white rounded-3xl transition-all
+}
+
+.sidebar-icon:hover {
+    @apply hover:bg-white hover:text-gray-800 hover:rounded-xl
+}
+
+.sidebar-label {
+    @apply absolute w-auto p-2 m-2 min-w-max right-16
+    rounded-md shadow-md bg-gray-800 text-white transition-all
+    duration-100 scale-0 origin-right font-bold text-sm
+}
