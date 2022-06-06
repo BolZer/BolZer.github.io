@@ -23,8 +23,11 @@ module.exports = {
       yellow: colors.amber,
       blue: colors.blue,
       teal: colors.teal,
-      primary: "#212326",
-      secondary: "#36393f"
+      primary: "#263238",
+      secondary: "#F5F5F6",
+      ternary: "#E1E2E1",
+      light: "#4f5b62",
+      dark: "#000a12",
     },
   },
   variants: {
