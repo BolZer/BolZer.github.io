@@ -2,9 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-dark
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 html {
     font-family: Roboto,sans-serif;
-    @apply text-base m-0 bg-secondary text-primary scroll-smooth
+    @apply text-base m-0 bg-secondary text-secondary bg-dark scroll-smooth mr-16
+}
+
+body {
+    @apply m-0 p-0 antialiased text-base
+}
+
+section {
+    @apply h-screen flex flex-col text-left p-8
+}
+
+.section-title {
+    @apply font-extrabold text-5xl mb-12
+}
+
+article {
+    @apply w-full shadow-lg bg-light p-6 border-t-8 border-primary text-left
+}
+
+article > h3 {
+    @apply font-light text-sm
+}
+
+article > h1 {
+    @apply font-bold text-xl
+}
+
+article > p {
+    @apply py-4
 }
 
 .sidebar {
@@ -13,7 +57,7 @@ html {
 }
 
 .sidebar-avatar-container {
-    @apply pt-4 pb-4 text-center bg-dark text-secondary
+    @apply pt-4 pb-4 text-center bg-light text-secondary
 }
 
 .sidebar-avatar-text {

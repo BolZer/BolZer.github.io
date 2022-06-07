@@ -7,10 +7,10 @@ export const SideBar = (): JSX.Element => {
                 <div className={"sidebar-avatar-text"}>JN</div>
             </div>
             <div className={"sidebar-button-container"}>
-                <SideBarLink icon={"fa-solid fa-house fa-fw"} text={"Home"}/>
-                <SideBarLink icon={"fa-solid fa-user fa-fw"} text={"Circum Vitae"}/>
-                <SideBarLink icon={"fa-solid fa-flask-vial fa-fw"} text={"Work Examples"}/>
-                <SideBarLink icon={"fa-solid fa-envelope fa-fw"} text={"Contact me"}/>
+                <SideBarLink icon={"fa-solid fa-house fa-fw"} text={"Home"} href={"#home"}/>
+                <SideBarLink icon={"fa-solid fa-user fa-fw"} text={"Circum Vitae"} href={"#cv"}/>
+                <SideBarLink icon={"fa-solid fa-flask-vial fa-fw"} text={"Work Examples"} href={"#work"}/>
+                <SideBarLink icon={"fa-solid fa-envelope fa-fw"} text={"Contact me"} href={"#contact"}/>
             </div>
             <div className={"sidebar-social-container"}>
                 <SideBarSocialLink icon={"fab fa-linkedin-in fa-fw"} text={"Visit me @ LinkedIn"}/>
@@ -20,9 +20,9 @@ export const SideBar = (): JSX.Element => {
     );
 }
 
-export const SideBarLink = ({icon, text}: {icon: string, text: string}): JSX.Element => {
+export const SideBarLink = ({icon, text, href}: {icon: string, text: string , href: string}): JSX.Element => {
     return (
-        <a className={"sidebar-icon group"} href={'#'}>
+        <a className={"sidebar-icon group"} href={href}>
             <i className={icon}/>
 
             <span className={"sidebar-label group-hover:scale-100"}>

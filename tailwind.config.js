@@ -27,7 +27,7 @@ module.exports = {
       secondary: "#F5F5F6",
       ternary: "#E1E2E1",
       light: "#4f5b62",
-      dark: "#000a12",
+      dark: "#1d1d1d",
     },
   },
   variants: {
