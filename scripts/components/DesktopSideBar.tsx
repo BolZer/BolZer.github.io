@@ -31,8 +31,14 @@ export const DesktopSideBar = (): JSX.Element => {
                 />
             </div>
             <div className={"sidebar-social-container"}>
-                <SideBarSocialLink icon={"fab fa-linkedin-in fa-fw"} text={"Visit me @ LinkedIn"}/>
-                <SideBarSocialLink icon={"fab fa-github fa-fw"} text={"Visit me @ Github"}/>
+                <SideBarSocialLink icon={"fab fa-linkedin-in fa-fw"}
+                                   text={"Visit me @ LinkedIn"}
+                                   href={"https://github.com/BolZer"}
+                />
+                <SideBarSocialLink icon={"fab fa-github fa-fw"}
+                                   text={"Visit me @ Github"}
+                                   href={"https://github.com/BolZer"}
+                />
             </div>
         </div>
     );
@@ -50,9 +56,9 @@ export const SideBarLink = ({icon, text, href, active}: {icon: string, text: str
     );
 }
 
-export const SideBarSocialLink = ({icon, text}: {icon: string, text: string}): JSX.Element => {
+export const SideBarSocialLink = ({icon, text, href}: {icon: string, text: string, href: string}): JSX.Element => {
     return (
-        <a className={"sidebar-social-icon group"} href={'#'}>
+        <a className={"sidebar-social-icon group"} href={href} target={"_blank"}>
             <i className={icon}/>
 
             <span className={"sidebar-label group-hover:scale-100"}>
