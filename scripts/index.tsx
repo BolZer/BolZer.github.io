@@ -13,7 +13,7 @@ const Portfolio = (): JSX.Element => {
         <>
             <MobileNavBar/>
             <DesktopSideBar/>
-            <div className={"container mx-auto"}>
+            <div className={"portfolio"}>
                 <Section id={"home"} title={"Welcome"}>
                     <span>Home</span>
                 </Section>
