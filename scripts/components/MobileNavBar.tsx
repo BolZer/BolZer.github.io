@@ -27,36 +27,36 @@ export const MobileNavBar = (): JSX.Element => {
                     }
                 </button>
             </div>
-            <div className={`navbar-links ${!state ? 'hidden' : ''}`}>
+            <div className={`navbar-links ${!state ? "hidden" : ""}`}>
                 <a href="#home"
-                   className={`${locationContext.currentLocation === "home" ? 'active' : ''}`}
-                   onClick={() => {
-                       closeMenu()
-                   }}
+                    className={`${locationContext.currentLocation === "home" ? "active" : ""}`}
+                    onClick={() => {
+                        closeMenu()
+                    }}
                 >
                     Home
                 </a>
                 <a href="#cv"
-                   className={`${locationContext.currentLocation === "cv" ? 'active' : ''}`}
-                   onClick={() => {
-                       closeMenu()
-                   }}
+                    className={`${locationContext.currentLocation === "cv" ? "active" : ""}`}
+                    onClick={() => {
+                        closeMenu()
+                    }}
                 >
                     Circum Vitae
                 </a>
                 <a href="#work"
-                   className={`${locationContext.currentLocation === "work" ? 'active' : ''}`}
-                   onClick={() => {
-                       closeMenu()
-                   }}
+                    className={`${locationContext.currentLocation === "work" ? "active" : ""}`}
+                    onClick={() => {
+                        closeMenu()
+                    }}
                 >
                     Work Examples
                 </a>
                 <a href="#contact"
-                   className={`${locationContext.currentLocation === "contact" ? 'active' : ''}`}
-                   onClick={() => {
-                       closeMenu()
-                   }}
+                    className={`${locationContext.currentLocation === "contact" ? "active" : ""}`}
+                    onClick={() => {
+                        closeMenu()
+                    }}
                 >
                     Contact
                 </a>
