@@ -20,7 +20,7 @@
 
 html {
     font-family: Roboto,sans-serif;
-    @apply text-base m-0 bg-secondary text-secondary bg-dark scroll-smooth mr-16
+    @apply text-base m-0 bg-secondary text-secondary bg-dark scroll-smooth lg:mr-16 lg:mt-0 mt-16
 }
 
 body {
@@ -28,15 +28,19 @@ body {
 }
 
 section {
-    @apply h-screen flex flex-col text-left p-8
+    @apply min-h-screen h-full flex flex-col text-left p-8
 }
 
 .section-title {
     @apply font-extrabold text-5xl mb-12
 }
 
+.work-example-container {
+    @apply grid gap-3 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1
+}
+
 article {
-    @apply w-full shadow-lg bg-light p-6 border-t-8 border-primary text-left
+    @apply w-full shadow-lg bg-light p-6 border-t-8 border-primary text-left lg:h-full
 }
 
 article > h3 {
@@ -51,9 +55,30 @@ article > p {
     @apply py-4
 }
 
+.navbar {
+    @apply fixed top-0 right-0 w-screen h-16 m-0 flex-row
+    bg-primary justify-between lg:hidden flex items-center
+}
+
+.navbar .sidebar-avatar-container {
+    @apply pr-5 pl-5
+}
+
+.navbar-links {
+    @apply fixed w-full bg-light p-4 text-center
+}
+
+.navbar-links a {
+    @apply block pt-4 pb-4 text-lg font-bold m-auto
+}
+
+.navbar-icon {
+    @apply pr-5 pl-5 font-bold text-2xl
+}
+
 .sidebar {
-    @apply fixed top-0 right-0 h-screen w-16 m-0 flex flex-col bg-primary
-    shadow-md justify-between
+    @apply fixed top-0 right-0 h-screen w-16 m-0 flex-col bg-primary
+    shadow-md justify-between lg:flex hidden
 }
 
 .sidebar-avatar-container {

@@ -1,11 +1,10 @@
 import React from "react";
+import {Avatar} from "./Avatar";
 
-export const SideBar = (): JSX.Element => {
+export const DesktopSideBar = (): JSX.Element => {
     return (
         <div className={"sidebar"}>
-            <div className={"sidebar-avatar-container"}>
-                <div className={"sidebar-avatar-text"}>JN</div>
-            </div>
+            <Avatar/>
             <div className={"sidebar-button-container"}>
                 <SideBarLink icon={"fa-solid fa-house fa-fw"} text={"Home"} href={"#home"}/>
                 <SideBarLink icon={"fa-solid fa-user fa-fw"} text={"Circum Vitae"} href={"#cv"}/>
