@@ -17,7 +17,11 @@ export const MobileNavBar = (): JSX.Element => {
                 <button className={"navbar-icon"} onClick={() => {
                     setState(!state)
                 }}>
-                    <i className={"fas fa-bars fa-fw"}></i>
+                    {
+                        !state
+                            ? <i className={"fas fa-bars fa-fw"}></i>
+                            : <i className={"fas fa-times fa-fw"}></i>
+                    }
                 </button>
             </div>
             <div className={`navbar-links ${!state ? 'hidden' : ''}`}>

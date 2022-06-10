@@ -101,6 +101,10 @@ article > p {
     mx-auto shadow-lg bg-light text-secondary rounded-3xl transition-all
 }
 
+.active {
+    @apply bg-white text-light
+}
+
 .sidebar-icon:hover {
     @apply hover:bg-white hover:text-light hover:rounded-xl
 }
